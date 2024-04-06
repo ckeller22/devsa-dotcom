@@ -37,8 +37,8 @@ export function AnimatedText() {
                'line-height': 'normal'
             }}
          >
-            <span className="text-neutral-950">Building for</span>{' '}
-            {words[currentWordIndex]}{' '}
+            <span className="text-neutral-950">Let's build</span>{' '}
+            together
          </h1>
 
          <style>

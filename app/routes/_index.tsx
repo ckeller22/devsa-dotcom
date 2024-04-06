@@ -8,6 +8,7 @@ import { AnimatedText } from '~/components/AnimatedText';
 import { SponsorMask } from '~/components/CTA/SponsorMask';
 import { ShopSection } from '~/components/CTA/Shop';
 import { CalendarSection } from '~/components/CTA/Calendar';
+import { SocialMedia } from '~/components/SocialMedia';
 
 export const meta: MetaFunction = () => {
    return [
@@ -25,12 +26,13 @@ export const meta: MetaFunction = () => {
 export default function Index() {
    return (
       <>
-         <PageIntro eyebrow="Shaping the identity of tech in San Antonio" title={<AnimatedText />}>
+         <PageIntro title={<AnimatedText />}>
             <p>
-               Within our city, there is a significant disparity in defining San Antonio's tech landscape.{' '}
-               <strong>devSA</strong> strives to mitigate this gap by establishing a vibrant hub that fosters an inclusive atmosphere for the local tech community     
+              <strong>devSA</strong> is a vibrant hub for creators in the greater San Antonio area. Join our Discord channel or follow us on social media to showcase your work and network with fellow creatives today!
             </p>
+            <SocialMedia className='py-10'/>
          </PageIntro>
+
 
          <MarqueeSection />
          <HeroSection />
