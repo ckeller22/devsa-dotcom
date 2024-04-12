@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { Container } from '../Container';
 import { FadeIn } from '../FadeIn';
 import { Button } from '../Button';
+import { SocialMedia } from '../SocialMedia';
 
 export function WavyBackgroundHero() {
    return (
@@ -11,26 +12,26 @@ export function WavyBackgroundHero() {
          <FadeIn>
             <WavyBackground className="mx-auto">
                <h1 className="mx-auto lg:text-center">
-                  <span className="font-display block text-base font-semibold text-neutral-950">
-                     Shaping the identity of tech in San Antonio
-                  </span>
                   <span className="font-display mt-6 block max-w-5xl text-balance text-5xl font-medium tracking-tight text-neutral-800 sm:text-7xl">
                      The Software Developer Hub for San Antonio
                   </span>
                </h1>
                <p className="mx-auto mt-6 max-w-3xl text-balance text-xl text-neutral-600 lg:text-center">
-                  <strong>DEVSA</strong> is a educational non-profit
-                  organization for the software development and engineer
-                  community
+                  <strong>DevSA</strong> is a educational non-profit
+                  organization for the software engineering community in the
+                  greater San Antonio area. Explore our events, join our Discord
+                  channel, or follow us on social media to network with fellow
+                  developers today.
                </p>
-               <div className='flex item-center lg:justify-center'>
-               <Button
-                  className="mt-8"
-                  href="https://donate.stripe.com/00g3cq2yM2XsbGU144"
-                  invert={false}
-               >
-                  Donations powered by Stripe
-               </Button>
+               <div className="mt-6 flex items-center lg:justify-center">
+                  <SocialMedia className="" />
+                  {/* <Button
+                     className=""
+                     href="https://donate.stripe.com/00g3cq2yM2XsbGU144"
+                     invert={false}
+                  >
+                     Donate
+                  </Button> */}
                </div>
             </WavyBackground>
          </FadeIn>
