@@ -10,7 +10,7 @@ export function WavyBackgroundHero() {
    return (
       <Container className="mt-24 sm:mt-32 lg:mt-40">
          <FadeIn>
-            <WavyBackground className="mx-auto">
+            <WavyBackground className="mx-auto" speed="slow">
                <h1 className="mx-auto lg:text-center">
                   <span className="font-display mt-6 block max-w-5xl text-balance text-5xl font-medium tracking-tight text-neutral-800 sm:text-7xl">
                      The Software Developer Hub for San Antonio
